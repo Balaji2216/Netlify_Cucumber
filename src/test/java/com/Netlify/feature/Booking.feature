@@ -11,3 +11,5 @@ And Click on Checkout button
 And Select Shipping button on Cart checkout page
 And Click on Make payment option once visibled
 Then Print the receipt number for the selected product.
+
+Rupesh
