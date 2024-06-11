@@ -16,4 +16,7 @@ GIT ADDED NEWLY
 By another user
 GIT ADDED
 
+By me
 Conflict needs to clear
+By team mate.
+clear conflict
