@@ -15,3 +15,5 @@ By me
 GIT ADDED NEWLY
 By another user
 GIT ADDED
+
+clear conflict
