@@ -1,5 +1,7 @@
 package com.netlify1.stepdefinition;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -7,19 +9,22 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.BaseClassMethods.BaseClass;
 import com.Netlify.runner.Netlify;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class Stepdefinition {
+public class Stepdefinition  {
 	
 	WebDriver driver = Netlify.driver;
 	
 	@Given("User needs to launch the Netlifybrowser.")
 	public void user_needs_to_launch_the_netlifybrowser() {
+//		geturl("https://commercejs-demo-store.netlify.app");
 		driver.get("https://commercejs-demo-store.netlify.app");
+		driver.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
 	}
 
 	@When("User selects Shopnow option")

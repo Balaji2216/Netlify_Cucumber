@@ -1,12 +1,13 @@
 package com.Netlify.runner;
 
 import java.util.concurrent.TimeUnit;
-
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+
+import com.BaseClassMethods.BaseClass;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
@@ -28,6 +29,9 @@ public class Netlify {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
 	}
+//	 browserlaunch("chrome");
+//	}
+
 	
 	@AfterClass
 	public static void browserclose() {

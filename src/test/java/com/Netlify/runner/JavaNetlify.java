@@ -8,18 +8,23 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import com.BaseClassMethods.BaseClass;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class JavaNetlify {
+public class JavaNetlify extends BaseClass {
 
 	public static void main(String[] args) throws InterruptedException  {
 
-		WebDriverManager.chromedriver().setup();
+//		WebDriverManager.chromedriver().setup();
+//		
+//		WebDriver driver=new ChromeDriver();
+//		
+//		driver.manage().window().maximize();
 		
-		WebDriver driver=new ChromeDriver();
-		
-		driver.manage().window().maximize();
-		
+		browserlaunch("chrome");
+
 		driver.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
 		 
 		driver.get("https://commercejs-demo-store.netlify.app");
